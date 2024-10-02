@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+        <bean id="emp" class="com.natwest.Empoyee">
+
+        </bean>
+        <bean id="rest" class="com.natwest.example.Restraunt">
+                <property name="name" value="abc"></property>
+                <property name="address" value="hsr"></property>
+        </bean>
+        <bean id="rest1" class="com.natwest.example.Restraunt">
+<!--                <property name="name" value="Gokhana"></property>-->
+<!--                <property name="address" value="HSR"></property>-->
+<!--                using constrecter-->
+                <constructor-arg value="cafe coffie day"></constructor-arg>
+                <constructor-arg value="RMZ"></constructor-arg>
+
+        </bean>
+        <bean id="rest2" class="com.natwest.example.Restraunt">
+                <!--                <property name="name" value="Gokhana"></property>-->
+                <!--                <property name="address" value="HSR"></property>-->
+                <!--                using constrecter-->
+                <constructor-arg value="cafe coffie day"></constructor-arg>
+                <constructor-arg value="RMZ"></constructor-arg>
+
+        </bean>
+
+
+</beans>
